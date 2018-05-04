@@ -1,6 +1,7 @@
 package com.evguru.timer;
 
 import com.evguru.timer.service.Message.DefaultMessageBuilder;
+import com.evguru.timer.service.Message.HappyMessageBuilder;
 import com.evguru.timer.service.Message.MessageBuilder;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
@@ -12,6 +13,6 @@ public class Config {
 
     @Bean
     public MessageBuilder messageBuilder() {
-        return new DefaultMessageBuilder();
+        return new HappyMessageBuilder();
     }
 }

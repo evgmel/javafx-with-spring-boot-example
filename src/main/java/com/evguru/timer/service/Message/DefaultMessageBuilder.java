@@ -6,7 +6,7 @@ import org.springframework.stereotype.Component;
 public class DefaultMessageBuilder implements MessageBuilder{
 
     @Override
-    public String buildGreetingMessage() {
+    public String buildGreetingMessage(String name) {
         return "Hello, amigo!";
     }
 }

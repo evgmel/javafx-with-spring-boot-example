@@ -29,10 +29,11 @@ public class App extends Application {
 
     @Override
     public void start(Stage primaryStage) throws Exception {
-        Scene scene = new Scene(rootNode, 500, 380);
+        Scene scene = new Scene(rootNode, 540, 390);
         primaryStage.setScene(scene);
         primaryStage.setOnCloseRequest(e -> Platform.exit());
-        primaryStage.setMinWidth(500);
+        primaryStage.setMinWidth(540);
+        primaryStage.setMinHeight(390);
         primaryStage.show();
 
         System.out.println("Application started");

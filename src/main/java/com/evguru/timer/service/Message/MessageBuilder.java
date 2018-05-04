@@ -6,5 +6,5 @@ public interface MessageBuilder {
     /**
      * Build default greeting message
      */
-    String buildGreetingMessage();
+    String buildGreetingMessage(String name);
 }
